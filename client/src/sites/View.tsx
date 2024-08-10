@@ -21,15 +21,13 @@ function View() {
             setBackendData(data);
             console.log(data);
         });
-    }, []);
+    }, [id, server_path]);
 
     return (
-        <>
-        {BackendData !== null ? (
-            <div className="card">
-                <div className="card-body">
+        <div className="view-container">
+            {BackendData !== null ? (
+                <div className="card">
                     <div className="card-header">
-                        <div className="profile-pic"></div>
                         <div className="card-author-info">
                             <h5 className="card-author">{BackendData["username"]}</h5>
                         </div>
@@ -38,13 +36,12 @@ function View() {
                     <p className="card-text" dangerouslySetInnerHTML={{ __html: BackendData["text"].replace(/\n/g, '<br />') }} />
                     <a href="/" className="card-link">Back to Home</a>
                 </div>
-            </div>
-        ) : (
-            <div className="view-container">
-                <p>Post with index {id} not found.</p>
-            </div>
-        )}
-        </>
+            ) : (
+                <div className="view-container">
+                    <p>Post with index {id} not found.</p>
+                </div>
+            )}
+        </div>
     );
 }
 

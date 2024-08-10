@@ -60,6 +60,9 @@ function Register() {
                 <div className="mt-3 text-center">
                     <a href="/login">Login</a>
                 </div>
+                <div className="mt-3 text-center">
+                    <a href="/">Login as Guest</a>
+                </div>
                 </div>
             </div>
         </div>

@@ -74,6 +74,9 @@ function Login() {
                 <div className="mt-3 text-center">
                     <a href="/register">Register</a>
                 </div>
+                <div className="mt-3 text-center">
+                    <a href="/">Login as Guest</a>
+                </div>
                 </div>
             </div>
         </div>

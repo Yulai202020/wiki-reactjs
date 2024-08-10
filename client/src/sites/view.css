@@ -1,26 +1,29 @@
+/* view.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .view-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh; /* Ensure the container takes up full viewport height */
-    padding: 20px;
-    background-color: #e6ecf0; /* Light Twitter-like background */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
 .card {
-    width: 18rem; /* Set width to 18rem */
-    border: 1px solid #e1e8ed;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-    padding: 15px;
+    width: 100%;
+    max-width: 600px; /* Adjust this to the desired max width of your card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
 }
 
 .card-header {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .card-author-info {
@@ -28,25 +31,23 @@
 }
 
 .card-author {
-    font-size: 1.1em;
+    margin: 0;
     font-weight: bold;
-    color: #1da1f2; /* Twitter blue for author name */
 }
 
 .card-title {
-    font-size: 1.2em;
-    margin: 0;
-    color: #14171a; /* Dark text color */
+    margin: 0 0 10px;
 }
 
 .card-text {
-    font-size: 1em;
-    line-height: 1.4;
-    color: #14171a; /* Dark text color */
+    margin: 0 0 20px;
 }
 
-.not-found {
-    font-size: 1.2em;
-    color: #e0245e; /* Error color */
-    text-align: center;
+.card-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
 }
