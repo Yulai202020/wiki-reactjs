@@ -47,16 +47,23 @@ function Home() {
                     </div>
                     
                     {Cookies.get("token") !== undefined ? (
-                        <>
-                            <div className="mt-3 text-center">
-                                <a href="/logout">Logout</a>
-                            </div>
+                        <div>
                             <div className="mt-3 text-center">
                                 <a href="/add">Add</a>
                             </div>
-                        </>
+                            <div className="mt-3 text-center">
+                                <a href="/logout">Logout</a>
+                            </div>
+                        </div>
                     ) : (
-                        <></>
+                        <div>
+                            <div className="mt-3 text-center">
+                                <a href="/register">Register</a>
+                            </div>
+                            <div className="mt-3 text-center">
+                                <a href="/login">Login</a>
+                            </div>
+                        </div>
                     )}
 
                 </div>
